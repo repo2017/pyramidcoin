@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div style={{ 
+      display: "flex", 
+      flexDirection: "column", 
+      alignItems: "center", 
+      justifyContent: "center", 
+      minHeight: "100vh", 
+      fontFamily: "Arial, sans-serif" 
+    }}>
+      {/* Logo */}
+      <div style={{ 
+        width: "100px", 
+        height: "100px", 
+        background: "linear-gradient(to top, #facc15, #f59e0b)", 
+        clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)", 
+        marginBottom: "20px" 
+      }} />
+
+      {/* Title */}
+      <h1 style={{ fontSize: "2rem", marginBottom: "10px" }}>
+        Pyramid
+      </h1>
+
+      {/* Slogan */}
+      <h2 style={{ fontWeight: "normal", fontSize: "1.2rem", marginBottom: "20px", textAlign: "center" }}>
+        Community-Driven Money Making
+      </h2>
+
+      {/* Description */}
+      <p style={{ maxWidth: "400px", textAlign: "center", lineHeight: "1.5" }}>
+        We flip the meaning of <b>Pyramid</b> upside down.  
+        Instead of a scheme, it’s a community challenge:  
+        let’s see how big the pyramid can grow when driven by people,  
+        not by rules.  
       </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
