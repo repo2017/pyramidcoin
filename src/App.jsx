@@ -1,34 +1,44 @@
 function App() {
   return (
-    <div style={{ 
-      display: "flex", 
-      flexDirection: "column", 
-      alignItems: "center", 
-      justifyContent: "center", 
-      minHeight: "100vh", 
-      fontFamily: "Arial, sans-serif" 
-    }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        minHeight: "100vh",
+        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+        background: "linear-gradient(135deg, #1a1a1a, #333333)",
+        color: "#facc15",
+        textAlign: "center",
+        padding: "20px",
+      }}
+    >
       {/* Logo */}
-      <div style={{ 
-        width: "100px", 
-        height: "100px", 
-        background: "linear-gradient(to top, #facc15, #f59e0b)", 
-        clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)", 
-        marginBottom: "20px" 
-      }} />
+      <img
+        src="/600x600.avif"
+        alt="Pyramid Logo"
+        style={{ width: "150px", height: "150px", marginBottom: "20px" }}
+      />
 
       {/* Title */}
-      <h1 style={{ fontSize: "2rem", marginBottom: "10px" }}>
+      <h1 style={{ fontSize: "2.5rem", marginBottom: "10px" }}>
         Pyramid
       </h1>
 
       {/* Slogan */}
-      <h2 style={{ fontWeight: "normal", fontSize: "1.2rem", marginBottom: "20px", textAlign: "center" }}>
+      <h2
+        style={{
+          fontWeight: "300",
+          fontSize: "1.4rem",
+          marginBottom: "20px",
+        }}
+      >
         Community-Driven Money Making
       </h2>
 
       {/* Description */}
-      <p style={{ maxWidth: "400px", textAlign: "center", lineHeight: "1.5" }}>
+      <p style={{ maxWidth: "500px", lineHeight: "1.6", fontSize: "1.1rem" }}>
         We flip the meaning of <b>Pyramid</b> upside down.  
         Instead of a scheme, it’s a community challenge:  
         let’s see how big the pyramid can grow when driven by people,  
