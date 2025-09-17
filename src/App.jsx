@@ -16,7 +16,7 @@ function App() {
     >
       {/* Logo */}
       <img
-        src="/logo.png"
+        src="/600x600.avif"
         alt="Pyramid Logo"
         style={{ width: "200px", height: "auto", marginBottom: "20px" }}
       />
