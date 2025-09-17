@@ -8,17 +8,17 @@ function App() {
         justifyContent: "center",
         minHeight: "100vh",
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        background: "linear-gradient(135deg, #1a1a1a, #333333)",
+        background: "linear-gradient(135deg, #000000, #1a1a1a)",
         color: "#facc15",
         textAlign: "center",
-        padding: "20px",
+        margin: 0,
       }}
     >
       {/* Logo */}
       <img
-        src="/600x600.avif"
+        src="/logo.png"
         alt="Pyramid Logo"
-        style={{ width: "150px", height: "150px", marginBottom: "20px" }}
+        style={{ width: "200px", height: "auto", marginBottom: "20px" }}
       />
 
       {/* Title */}
